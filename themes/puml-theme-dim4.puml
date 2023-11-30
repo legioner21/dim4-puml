@@ -1,0 +1,10 @@
+skinparam BackgroundColor F9F9F9
+skinparam shadowing false
+skinparam RoundCorner 7
+skinparam ArrowColor 191919
+skinparam FontColor 191919
+skinparam SequenceLifeLineBorderColor 393939
+skinparam SequenceGroupHeaderFontColor 191919
+skinparam SequenceGroupFontColor 393939
+skinparam SequenceGroupBorderColor 393939
+skinparam SequenceGroupBorderThickness 1
