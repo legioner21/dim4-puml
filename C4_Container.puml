@@ -1,0 +1,24 @@
+@startuml
+'themes
+!include https://raw.githubusercontent.com/legioner21/dim4-puml/master/themes/puml-theme-dim4.puml
+
+'s4 model
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+'components
+!define actors https://raw.githubusercontent.com/legioner21/dim4-puml/master/components/c4/containers/actors
+!define external_systems https://raw.githubusercontent.com/legioner21/dim4-puml/master/components/c4/containers/external_systems
+!define services https://raw.githubusercontent.com/legioner21/dim4-puml/master/components/c4/containers/services
+
+LAYOUT_LANDSCAPE()
+
+!include actors/manager.puml
+!include services/one_service.puml
+
+Rel(manager, one_service, "использует")
+
+System(service2, "Сервис 2")
+System(service3, "Сервис 3")
+
+Rel(service2, service3, "test")
+@enduml
